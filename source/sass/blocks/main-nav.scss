@@ -7,6 +7,8 @@
 
   background-color: #ffffff;
 
+  z-index: 100;
+
   &--closed {
     display: none;
   }
@@ -45,10 +47,14 @@
   position: absolute;
   top: 15px;
   right: 0;
+
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav__languages {
-  display: none;
+  top: 35px;
+  left: 50%;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,7 +1,5 @@
 .languages {
   position: absolute;
-  top: 35px;
-  left: 50%;
 
   width: 250px;
 
@@ -10,6 +8,15 @@
   border-radius: 10px;
 
   transform: translateX(-50%);
+  z-index: 100;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
 }
 
 .languages__list {

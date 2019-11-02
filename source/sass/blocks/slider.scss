@@ -7,7 +7,7 @@
 
   position: relative;
 
-  background-image: url('../img/cable-compound.png');
+  background-image: url("../img/cable-compound.png");
   background-repeat: no-repeat;
   background-position: center bottom;
 }
@@ -78,7 +78,7 @@
 @media (min-width: $desktop-width) {
   .slider__title {
     padding-top: 170px;
-    padding-right: 300px;
+    padding-right: 350px;
 
     font-size: 80px;
     line-height: 88px;

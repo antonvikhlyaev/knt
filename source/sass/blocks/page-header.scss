@@ -42,6 +42,35 @@
   }
 }
 
+.page-header__toggle.page-header__toggle--close {
+  position: relative;
+  width: 34px;
+  border: none;
+  background: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 3px;
+    width: 28px;
+    height: 2px;
+    background-color: $text-color;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 3px;
+    width: 28px;
+    height: 2px;
+    background-color: $text-color;
+    transform: rotate(-45deg);
+  }
+}
+
 .page-header__flag {
   display: none;
 }
@@ -52,7 +81,13 @@
 
 @media (min-width: $tablet-width) {
   .page-header__bar {
+    position: relative;
     border-bottom: 1px solid #d0d0de;
+  }
+
+  .page-header__languages {
+    top: 40px;
+    right: -100px;
   }
 
   .page-header__contacts {
@@ -89,6 +124,10 @@
   .page-header__logo-image {
     width: 396px;
     height: 83px;
+  }
+
+  .page-header__languages {
+    top: 60px;
   }
 
   .page-header__contacts {
