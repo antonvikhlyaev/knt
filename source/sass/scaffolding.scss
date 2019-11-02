@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.content-box-component {
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $text-color;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,16 @@
+.heading-primary {
+  margin: 0;
+  padding: 0;
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #1a1a1b;
+}
+
+@media (min-width: $desktop-width) {
+  .heading-primary {
+    font-size: 52px;
+    line-height: 60px;
+  }
+}

@@ -1,0 +1,90 @@
+.slider {
+  background-color: #f6f7f7;
+}
+
+.slider__wrapper {
+  @include container;
+
+  position: relative;
+
+  background-image: url('../img/cable-compound.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.slider__list {
+  @include reset-list;
+}
+
+.slider__title {
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0;
+  padding-top: 70px;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+
+  text-transform: uppercase;
+}
+
+.slider__button {
+  margin-bottom: 275px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+
+      width: 800px;
+      height: 668px;
+
+      position: absolute;
+      top: 0;
+      right: -200px;
+
+      background-image: url("../img/slide-bg.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .slider__wrapper {
+    position: relative;
+    background-image: none;
+
+    z-index: 1;
+  }
+
+  .slider__title {
+    padding-right: 270px;
+
+    font-size: 52px;
+    line-height: 58px;
+  }
+
+  .slider__button {
+    margin-bottom: 75px;
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__title {
+    padding-top: 170px;
+    padding-right: 300px;
+
+    font-size: 80px;
+    line-height: 88px;
+  }
+
+  .slider__button {
+    margin-bottom: 170px;
+  }
+}

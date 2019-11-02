@@ -1,0 +1,141 @@
+.use__wrapper {
+  @include container;
+  padding-top: 70px;
+  padding-bottom: 55px;
+}
+
+.use__title {
+  margin-bottom: 40px;
+}
+
+.use__select-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    width: 16px;
+    height: 13px;
+
+    background-image: url("../img/icon-triagle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+  }
+}
+
+.use__select {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 5px 10px;
+
+  width: 100%;
+
+  background: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #00aeef;
+
+  appearance: none;
+  z-index: 2;
+
+  &:hover,
+  &:focus {
+    border-color: #273896;
+    outline: none;
+  }
+}
+
+.use__cards {
+  @include reset-list;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.use__card {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 130px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.use__card-image-container {
+  margin: 0;
+  padding: 0;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.use__card-image {
+  display: block;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.use__card-label {
+  margin: 0;
+  padding: 10px 15px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #273896;
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .use__wrapper {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+
+  .use__select-container {
+    width: 300px;
+  }
+
+  .use__card {
+    width: 162px;
+
+    &:nth-child(2n) {
+      margin-right: 20px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .use__card {
+    width: 250px;
+  }
+
+  .use__card-label {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    text-align: center;
+  }
+}
