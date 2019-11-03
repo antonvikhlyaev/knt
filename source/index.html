@@ -7,6 +7,8 @@
   <title>KNTPLAST | производство ПВХ-пластика</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -27,7 +29,7 @@
         <button class="page-header__flag flag flag--rus" aria-label="Текущая версия">
           <img class="flag__image" src="img/rus.png" width="37" height="38" alt="Сайт на русском языке">
         </button>
-        <div class="page-header__languages languages languages--closed">
+        <div class="page-header__languages languages languages--closed animated fast">
           <ul class="languages__list">
             <span class="visually-hidden">Выберите язык</span>
             <li class="languages__item languages__item--active">
@@ -44,7 +46,7 @@
           </button>
         </div>
       </div>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed animated faster">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="about.html">О компании</a>
@@ -71,7 +73,7 @@
           <button class="main-nav__flag flag flag--rus" aria-label="Текущая версия">
             <img class="flag__image" src="img/rus.png" width="37" height="38" alt="Сайт на русском языке">
           </button>
-          <div class="main-nav__languages languages languages--closed">
+          <div class="main-nav__languages languages languages--closed animated">
             <ul class="languages__list">
               <span class="visually-hidden">Выберите язык</span>
               <li class="languages__item languages__item--active">
@@ -95,29 +97,23 @@
     <h1 class="visually-hidden">Сайт КНТПЛАСТ - производитель ПВХ-пластика</h1>
     <section class="slider">
       <div class="slider__wrapper">
-        <input class="visually-hidden" type="radio" id="slide__control--01" name="slider__radio" checked>
-        <input class="visually-hidden" type="radio" id="slide__control--02" name="slider__radio">
-        <input class="visually-hidden" type="radio" id="slide__control--03" name="slider__radio">
-        <div class="slider__controls">
-          <label class="slider__label" for="slide__control--01">
-            <span class="visually-hidden">Первый слайд</span>
-          </label>
-          <label class="slider__label" for="slide__control--02">
-            <span class="visually-hidden">Второй слайд</span>
-          </label>
-          <label class="slider__label" for="slide__control--03">
-            <span class="visually-hidden">Третий слайд</span>
-          </label>
-        </div>
         <ul class="slider__list">
-          <li class="slider__item slider__item--01 slider__item--active">
+          <li class="slider__item slider__item--active">
             <h2 class="slider__title">Производство ПВХ-пластика</h2>
+            <a class="slider__button button" href="callback.html">Обратный звонок</a>
+          </li>
+          <li class="slider__item">
+            <h2 class="slider__title">Производство пластиката</h2>
+            <a class="slider__button button" href="callback.html">Обратный звонок</a>
+          </li>
+          <li class="slider__item">
+            <h2 class="slider__title">Продажа ПВХ-изделий</h2>
             <a class="slider__button button" href="callback.html">Обратный звонок</a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="about">
+    <section class="about wow fadeIn slow">
       <div class="about__wrapper">
         <h2 class="about__title heading-primary">О компании</h2>
         <p class="about__text">
@@ -128,7 +124,7 @@
         </p>
       </div>
     </section>
-    <section class="use">
+    <section class="use wow fadeIn slow">
       <div class="use__wrapper">
         <h2 class="use__title heading-primary">Сферы применения нашего пластика</h2>
         <form class="use__form" method="POST" action="#">
@@ -191,28 +187,28 @@
           </ul> -->
         </form>
         <ul class="use__cards">
-          <li class="use__card">
+          <li class="use__card wow slideInRight">
             <p class="use__card-image-container">
               <img class="use__card-image" src="img/blue-cable.png" alt="">
             </p>
             <p class="use__card-label">Lorem ipsum
               dolor sit</p>
           </li>
-          <li class="use__card">
+          <li class="use__card wow slideInRight">
             <p class="use__card-image-container">
               <img class="use__card-image" src="img/blue-cable.png" alt="">
             </p>
             <p class="use__card-label">Lorem ipsum
               dolor sit</p>
           </li>
-          <li class="use__card">
+          <li class="use__card wow slideInRight">
             <p class="use__card-image-container">
               <img class="use__card-image" src="img/blue-cable.png" alt="">
             </p>
             <p class="use__card-label">Lorem ipsum
               dolor sit</p>
           </li>
-          <li class="use__card">
+          <li class="use__card wow slideInRight">
             <p class="use__card-image-container">
               <img class="use__card-image" src="img/blue-cable.png" alt="">
             </p>
@@ -223,7 +219,7 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer wow fadeIn slow">
     <div class="page-footer__wrapper">
       <div class="page-footer__left">
         <a class="page-footer__logo">
@@ -247,6 +243,23 @@
       </div>
     </div>
   </footer>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider__list').slick({
+        autoplay: true,
+        arrows: false,
+        dots: true,
+        dotsClass: 'slider__controls'
+      });
+    });
+  </script>
+  <script>
+    new WOW().init();
+  </script>
   <script>
     // открытие и закрытие навигации
     var toggleMenu = document.querySelector('.page-header__toggle');
@@ -257,6 +270,7 @@
       if (menu.classList.contains('main-nav--closed')) {
         menu.classList.remove('main-nav--closed');
         menu.classList.add('main-nav--opened');
+        menu.classList.add('fadeInDown');
         toggleMenu.classList.remove('page-header__toggle--open');
         toggleMenu.classList.add('page-header__toggle--close');
       } else {
@@ -280,9 +294,14 @@
       if (popupHeaderLang.classList.contains('languages--closed')) {
         popupHeaderLang.classList.remove('languages--closed');
         popupHeaderLang.classList.add('languages--opened');
+        popupHeaderLang.classList.remove('fadeOut');
+        popupHeaderLang.classList.add('fadeIn');
+
       } else {
         popupHeaderLang.classList.remove('languages--opened');
         popupHeaderLang.classList.add('languages--closed');
+        popupHeaderLang.classList.remove('fadeIn');
+        popupHeaderLang.classList.add('fadeOut');
       }
     });
 
@@ -297,9 +316,13 @@
       if (popupMenuLang.classList.contains('languages--closed')) {
         popupMenuLang.classList.remove('languages--closed');
         popupMenuLang.classList.add('languages--opened');
+        popupMenuLang.classList.remove('fadeOut');
+        popupMenuLang.classList.add('fadeIn');
       } else {
         popupMenuLang.classList.remove('languages--opened');
         popupMenuLang.classList.add('languages--closed');
+        popupMenuLang.classList.remove('fadeIn');
+        popupMenuLang.classList.add('fadeOut');
       }
     });
 

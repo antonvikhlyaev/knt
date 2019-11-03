@@ -14,6 +14,48 @@
 
 .slider__list {
   @include reset-list;
+  position: relative;
+}
+
+.slider__controls {
+  @include reset-list;
+
+  display: flex;
+  flex-direction: row;
+
+  position: absolute;
+  bottom: 50px;
+
+  & li {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & button {
+      margin: 0;
+      padding: 0;
+
+      font-size: 0;
+
+      width: 20px;
+      height: 20px;
+
+      border: none;
+      border-radius: 50%;
+      background-color: #dedede;
+
+      &:hover,
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &.slick-active button {
+      background-color: #00aeef;
+    }
+  }
 }
 
 .slider__title {
@@ -52,6 +94,17 @@
       background-image: url("../img/slide-bg.png");
       background-position: center;
       background-repeat: no-repeat;
+    }
+  }
+
+  .slider__controls {
+    bottom: 30px;
+
+    & li {
+      & button {
+        width: 10px;
+        height: 10px;
+      }
     }
   }
 

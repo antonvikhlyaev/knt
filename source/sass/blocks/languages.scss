@@ -92,4 +92,14 @@
 
     transform: rotate(-45deg);
   }
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    &::before,
+    &::after {
+      background-color: #8f2796;
+    }
+  }
 }
